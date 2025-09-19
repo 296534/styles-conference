@@ -67,6 +67,23 @@ table {
   width: 960px;
 
 }
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
 
 /*
   ========================================
@@ -77,6 +94,19 @@ table {
 h1, h3, h4, h5, p {
   margin-bottom: 22px;
 }
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+.logo {
+  float: left;
+  border-top: 4px solid #648880;
+  padding: 40px 0 22px 0;
+}
+
 
 /*
   ========================================
@@ -95,3 +125,12 @@ h1, h3, h4, h5, p {
   padding: 10px 30px;
 }
 
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+.primary-footer small {
+  float: left;
+}
