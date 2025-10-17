@@ -55,6 +55,7 @@ Custom Styles
 body{
   color:#888;
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #293f50;
 }
 
 /*
@@ -174,7 +175,16 @@ a{
 p a {
   border-bottom:1px solid #dfe2e5;
 }
-
+.primary-header a,
+.primary-footer a{
+  color:#fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover{
+  color:#648880;
+  text-decoration:none;
+}
+  
 /*
   ========================================
   Buttons
@@ -182,15 +192,23 @@ p a {
 */
 
 .btn {
+  color:#fff;
+  cursor:pointer;
   border-radius: 5px;
   display: inline-block;
   margin: 0;
+  letter-spacing: uppercase;
+  font-weight:400;
 }
 .btn-alt {
-  border: 1px solid #dfe2e5;
+  border: 1px solid #fff;
   padding: 10px 30px;
+  transition:.3s;
 }
-
+.btn-alt:hover{
+  background:#fff;
+  color:#648880
+}
 /*
   ========================================
   Primary header
@@ -242,12 +260,13 @@ p a {
 */
 
 .hero {
+  color:#fff;
   padding: 22px 80px 66px 80px;
   line-height:44px;
   text-align: center;
 }
 .hero h2{
-  font-size:36px
+  font-size:36px;
 }
 .hero p{
   font-size:24px;
@@ -261,4 +280,15 @@ p a {
 */
 .nav{
   text-align: right;
+}
+
+/*
+=================================================
+Rows
+=================================================
+*/
+.row{
+  background:#fff;
+  min-width:960px;
+  padding:66px 0px 44px 0px;
 }
