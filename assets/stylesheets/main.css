@@ -243,7 +243,15 @@ p a {
   background: #fff;
   color: #648880;
 }
-
+.btn-default{
+  border: 0;
+  background: #648880;
+  padding: 11px 30px;
+  font-size: 14px
+}
+.btn-default:hover{
+  background: #77a198;
+}
 /*
   ========================================
   Primary header
@@ -411,5 +419,16 @@ textarea{
   width: 60px;
 }
 .register-group textarea {
+  height: 78px;
+}
+.register-group input,
+.register-group textarea{
+  width: 100%
+}
+.register-group select{
+  height: 34px;
+  width: 60px;
+}
+.register-group textarea{
   height: 78px;
 }
